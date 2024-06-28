@@ -68,6 +68,28 @@ a:hover {
     text-decoration: underline;
 }
 
+textarea {
+    border: 1px solid rgb(34, 34, 34);
+    outline: none;
+    background: rgba(26, 26, 26, 0.600);
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    margin: 0;
+    height: 200px;
+    border-radius: 3px;
+    columns: 4;
+}
+
+textarea:hover {
+    outline: none;
+    border: 1px solid rgb(124, 124, 124);
+}
+
+textarea:active {
+    outline: none;
+    border: 1px solid rgb(199, 199, 199);
+}
+
 .content {
     height: fit-content;
     max-width: 900px;
@@ -142,6 +164,7 @@ a:hover {
     height: 15px;
     padding: 4px;
     font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .pannel p {
@@ -165,9 +188,36 @@ a:hover {
     right: 0px;
     height: 100%;
     width: 300px;
+    transition: all 50ms ease;
 }
 
-@media only screen and (max-width: 1200px) {
+.copy-code {
+    text-align: left;
+}
+
+.under {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 10px;
+    background: rgb(128, 0, 0);
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1500px) {
+    .grad-left {
+        width: 100px;
+    }
+    .grad-right {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
     .grad-left {
         display: none;
     }
